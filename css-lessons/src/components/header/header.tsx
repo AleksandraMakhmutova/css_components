@@ -1,10 +1,10 @@
 import classNames from "classnames/bind";
-import style from "./header.module.css";
+import style from "./header.module.scss";
 import logo from "../../img/logo-white.png";
 import Button from "./button/button";
 const cx = classNames.bind(style);
 
-function Header() {
+function Header(): JSX.Element {
   return (
     <div className={cx("header")}>
       <div className={cx("header__logo-box")}>
