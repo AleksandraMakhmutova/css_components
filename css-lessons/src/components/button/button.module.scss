@@ -1,5 +1,5 @@
-$color-white: #fff;
-$color-grey-dark: #777777;
+@import "../../sass/abstracts/variables";
+@import "../../sass/base/animations";
 
 .btn-white {
   background-color: $color-white;
@@ -18,11 +18,15 @@ $color-grey-dark: #777777;
   }
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
   }
   &:active {
     transform: translateY(-1px);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
   }
   &::after {
     content: "";
@@ -38,24 +42,8 @@ $color-grey-dark: #777777;
     transition: all 0.4s;
     background-color: $color-white;
   }
-
-  &:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
+  --animation {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
   }
-}
-
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-.btn {
-  animation: moveInBottom 0.5s ease-out 0.75s;
-  animation-fill-mode: backwards;
 }

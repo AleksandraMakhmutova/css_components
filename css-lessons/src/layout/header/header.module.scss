@@ -1,5 +1,5 @@
-$color-primary-light: #7ed56f;
-$color-primary-dark: #28b485;
+@import "../../sass/abstracts/variables";
+@import "../../sass/base/animations";
 
 .header {
   height: 95vh;
@@ -47,7 +47,7 @@ $color-primary-dark: #28b485;
     /* animation-iteration-count: 3; */
     /* animation-delay: 3s; */
   }
-  
+
   &--bottom {
     display: block;
     font-size: 2rem;
@@ -59,33 +59,5 @@ $color-primary-dark: #28b485;
     animation-name: moveInRight;
     animation-duration: 1s;
     animation-timing-function: ease-out;
-  }
-}
-
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-10rem);
-  }
-  80% {
-    transform: translateX(1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem);
-  }
-  80% {
-    transform: translateX(-1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0);
   }
 }

@@ -1,7 +1,7 @@
 import classNames from "classnames/bind";
 import style from "./header.module.scss";
 import logo from "../../img/logo-white.png";
-import Button from "./button/button";
+import Button from "../../components/button/button";
 const cx = classNames.bind(style);
 
 function Header(): JSX.Element {
