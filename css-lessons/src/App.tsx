@@ -1,5 +1,6 @@
 import { BrowserRouter as Router } from "react-router-dom";
-import Header from "./layout/header/header";
+import Header from "./pages/header/header";
+import MainPage from "./pages/mainPage/mainPage";
 
 function App(): JSX.Element {
   return (
@@ -7,6 +8,7 @@ function App(): JSX.Element {
       <div>
         <div className="App">
           <Header />
+          <MainPage />
         </div>
       </div>
 
