@@ -1,6 +1,6 @@
 import { BrowserRouter as Router } from "react-router-dom";
-import Header from "./layout/header/header";
-import MainPage from "./layout/mainPage/mainPage";
+import Header from "./pages/header/header";
+import MainPage from "./pages/mainPage/mainPage";
 
 function App(): JSX.Element {
   return (
