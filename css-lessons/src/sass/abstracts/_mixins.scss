@@ -5,3 +5,10 @@
     clear: both;
   }
 }
+@mixin col-param {
+  background-color: turquoise;
+  float: left;
+  &:not(:last-child) {
+    margin-right: $gutter-horisontal;
+  }
+}
