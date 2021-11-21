@@ -1,3 +1,7 @@
+@import "../abstracts/mixins";
+
 .u-center-text {
   text-align: center;
+  @include u-margin-bottom-big;
 }
+
