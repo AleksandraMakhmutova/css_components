@@ -1,5 +1,6 @@
 import classNames from "classnames/bind";
 import BtnText from "../../components/btn-text/btnText";
+import Composition from "../../components/composition/composition";
 
 import style from "./mainPage.module.scss";
 
@@ -31,7 +32,9 @@ export default function MainPage() {
           </p>
           <BtnText />
         </div>
-        <div className={cx("col-1-of-2")}>Image composition</div>
+        <div className={cx("col-1-of-2")}>
+          <Composition />
+        </div>
       </div>
     </section>
   );
