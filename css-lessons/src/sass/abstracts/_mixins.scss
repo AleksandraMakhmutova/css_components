@@ -6,9 +6,17 @@
   }
 }
 @mixin col-param {
-  background-color: turquoise;
   float: left;
   &:not(:last-child) {
     margin-right: $gutter-horisontal;
   }
+}
+@mixin u-margin-bottom-big {
+  margin-bottom: 8rem;
+}
+@mixin u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+@mixin u-margin-bottom-small {
+  margin-bottom: 1.5rem;
 }

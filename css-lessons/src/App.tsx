@@ -1,4 +1,5 @@
 import { BrowserRouter as Router } from "react-router-dom";
+import FeaturesPart from "./pages/featuersPart/featuresPart";
 import Header from "./pages/header/header";
 import MainPage from "./pages/mainPage/mainPage";
 
@@ -9,6 +10,7 @@ function App(): JSX.Element {
         <div className="App">
           <Header />
           <MainPage />
+          <FeaturesPart />
         </div>
       </div>
 
